@@ -1,6 +1,6 @@
 # Code Book for Cleaning Data Project
 
-This document explains in details the source code used in the script "run_analysis.R".
+This document explains in detail the source code used in the script "run_analysis.R".
 
 ## Sections
 
@@ -27,6 +27,10 @@ Loads the relevant library / libraries
 ## access folders for test & train data
 
 Creates path variables for the required folders within the UCI-HAR dataset
+
+### rootdir - The path to the HAR dataset root folder
+### testdir - The path to the test directory within the root folder
+### traindir - The path to the train directory within the root folder
 
 ## check if dir exists, else unzip the dataset
 
