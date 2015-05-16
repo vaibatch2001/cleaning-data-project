@@ -20,7 +20,7 @@ In order to execute the source file and generate the desired output, please foll
 1. Clone the repository
 2. Download the UCI-HAR zip file from the URL: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 3. Copy the run_analysis.R script and the zip file to your working directory
-4. Execute the script
+4. Execute the script using the command: source("run_analysis.R")
 
 The above steps will generate a text file called "tidy-dataset.txt" in the working directory.
 
