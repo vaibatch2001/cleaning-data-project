@@ -41,7 +41,6 @@ testdata <- testdata[, colnames_total]
 testdata <- cbind("Activity" = testlabels2, testdata)
 testdata <- cbind(testsubjects, testdata)
 
-
 ## create additonal rows for train data (subject, activity)
 trainlabelpath <- paste(traindir, "\\y_train.txt", sep = "")
 trainlabels <- read.table(trainlabelpath, header = FALSE, nrows = -1, sep = "", col.names = c("labelID"))
@@ -60,8 +59,8 @@ traindata <- cbind(trainsubjects, traindata)
 ## merge datasets (test and training)
 traindata <- rbind(traindata, testdata)
 
-## create tidy dataset by aggregration (activity & subject)
-newdata <- aggregate(traindata[,3:length(colnames)], by = list(Subject = traindata$Subject, Activity = traindata$Activity), mean)
+## create tidy dataset by aggregation (activity & subject)
+newdata <- aggregate(traindata[,3:length(colnames_total)], by = list(Subject = traindata$Subject, Activity = traindata$Activity), mean)
 
 ## export to external file
 outputpath <- paste(getwd(), "\\tidy-dataset.txt", sep = "")
