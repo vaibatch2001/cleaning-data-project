@@ -28,9 +28,9 @@ Loads the relevant library / libraries
 
 Creates path variables for the required folders within the UCI-HAR dataset
 
-### rootdir - The path to the HAR dataset root folder
-### testdir - The path to the test directory within the root folder
-### traindir - The path to the train directory within the root folder
+* rootdir - The path to the HAR dataset root folder
+* testdir - The path to the test directory within the root folder
+* traindir - The path to the train directory within the root folder
 
 ## check if dir exists, else unzip the dataset
 
