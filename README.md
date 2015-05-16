@@ -18,7 +18,7 @@ A Detailed description of each of the above steps is listed in the file "CodeBoo
 In order to execute the source file and generate the desired output, please follow the steps mentioned below:
 
 1. Clone the repository
-2. Download the UCI-HAR zip file from the URL: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+2. Download the UCI-HAR zip file from the URL: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 3. Copy the run_analysis.R script to your working directory
 4. Execute the script
 

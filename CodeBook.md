@@ -54,7 +54,7 @@ Remove all columns from the test data frame which do not mention either "mean" o
 
 ### add columns for activity and subjects
 
-Add the activity and subject vectors created earlier as columns at the beginnning of the test data table
+Add the activity and subject vectors created earlier as columns at the beginning of the test data table
 
 ### create additional rows for train data (subject, activity)
 
