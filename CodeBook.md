@@ -40,9 +40,17 @@ If the contents of the HAR zip file has not yet been extracted, extract the cont
 
 Extract the activity names and subject ID's from the relevant text files as vectors for the test dataset
 
+* activitylabels - Table of actitivty labels (copied from activity_labels.txt)
+* testlabels <- Table of activity ID's for the test dataset (y_test.txt)
+* testlabels2 <- Table created by joiing above tables and replacing the activity ID's by labels
+* testsubjects <- Table of subject ID's for the test dataset (subject_test.txt)
+
 ### extract column Names for test data (features)
 
 Extract the column names for the test dataset from the relevant file
+
+* features <- Table of column names for both test and train dataset (features.txt)
+
 
 ### read test data
 
@@ -51,6 +59,9 @@ Read the test dataset into a table / frame and use the column names extracted ea
 ### filter columns specific to mean() and std()
 
 Remove all columns from the test data frame which do not mention either "mean" or "std"
+
+* colnames_mean -  List of column names containing the keyword "mean" 
+* colnames_std <- List of column names containing the keyword "std"
 
 ### add columns for activity and subjects
 
@@ -71,6 +82,8 @@ Append the test table rows to the training table to form a single unified data s
 ### create tidy dataset by aggregation (activity & subject)
 
 Create a new data set with the average / mean of each variable for each activity and each subject
+
+* newdata <- Calulates the mean of each column in the combined dataset grouped by Subject and Activity 
 
 ### export to external file
 
