@@ -41,15 +41,15 @@ If the contents of the HAR zip file has not yet been extracted, extract the cont
 Extract the activity names and subject ID's from the relevant text files as vectors for the test dataset
 
 * activitylabels - Table of actitivty labels (copied from activity_labels.txt)
-* testlabels <- Table of activity ID's for the test dataset (y_test.txt)
-* testlabels2 <- Table created by joiing above tables and replacing the activity ID's by labels
-* testsubjects <- Table of subject ID's for the test dataset (subject_test.txt)
+* testlabels - Table of activity ID's for the test dataset (y_test.txt)
+* testlabels2 - Table created by joiing above tables and replacing the activity ID's by labels
+* testsubjects - Table of subject ID's for the test dataset (subject_test.txt)
 
 ### extract column Names for test data (features)
 
 Extract the column names for the test dataset from the relevant file
 
-* features <- Table of column names for both test and train dataset (features.txt)
+* features - Table of column names for both test and train dataset (features.txt)
 
 
 ### read test data
@@ -61,7 +61,7 @@ Read the test dataset into a table / frame and use the column names extracted ea
 Remove all columns from the test data frame which do not mention either "mean" or "std"
 
 * colnames_mean -  List of column names containing the keyword "mean" 
-* colnames_std <- List of column names containing the keyword "std"
+* colnames_std - List of column names containing the keyword "std"
 
 ### add columns for activity and subjects
 
